@@ -5,7 +5,6 @@
     valorItem="codigoAlimento"
     textoItem="nomeAlimento"
     placeholder="Selecione Alimento"
-    corDeFundo="#fff"
     @alteracaoSelect="alteracaoSelecaoAlimento"
   ></atomo-selecao>
 </template>
@@ -14,26 +13,25 @@
 import Component from "vue-class-component";
 import Vue from "vue";
 import { AtomoSelecao } from "@/components/atomos";
-import { getModule } from "vuex-module-decorators";
-import AlimentosModule, { Alimento } from "@/store/AlimentosModule";
+import { Alimento } from "@/store/AlimentosModule";
+import { moduloAlimentos } from "@/store";
 @Component({
   components: {
     AtomoSelecao,
   },
 })
 export default class MoleculaSelecao extends Vue {
-  private moduloAlimentos = getModule(AlimentosModule, this.$store);
-
   get alimentos(): Alimento[] {
-    return this.moduloAlimentos.alimentos;
+    return moduloAlimentos.alimentos;
   }
 
   get alimentoSelecionado(): number | null {
-    return this.moduloAlimentos.alimentoSelecionado;
+    return moduloAlimentos.alimentoSelecionado;
   }
 
   alteracaoSelecaoAlimento(codigoAlimentoSelecionado: number): void {
-    this.moduloAlimentos.atualizaAlimentoSelecionado(codigoAlimentoSelecionado);
+    console.log('evento emitido')
+    moduloAlimentos.atualizaAlimentoSelecionado(codigoAlimentoSelecionado);
   }
 }
 </script>
