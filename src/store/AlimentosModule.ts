@@ -43,7 +43,7 @@ export default class AlimentosModule extends VuexModule {
   }
 
   @Action
-  atualizaAlimentoSelecionado(codigoAlimento: number): void {
+  atualizarAlimentoSelecionado(codigoAlimento: number): void {
     this.context.commit("setAlimentoSelecionado", codigoAlimento);
   }
 }

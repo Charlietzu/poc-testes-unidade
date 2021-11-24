@@ -30,8 +30,7 @@ export default class MoleculaSelecao extends Vue {
   }
 
   alteracaoSelecaoAlimento(codigoAlimentoSelecionado: number): void {
-    console.log('evento emitido')
-    moduloAlimentos.atualizaAlimentoSelecionado(codigoAlimentoSelecionado);
+    moduloAlimentos.atualizarAlimentoSelecionado(codigoAlimentoSelecionado);
   }
 }
 </script>
