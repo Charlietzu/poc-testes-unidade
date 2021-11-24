@@ -7,12 +7,8 @@
     :placeholder="placeholder"
     dense
     outlined
-    :background-color="corDeFundo"
-    :class="classes"
     item-color="primary"
     @change="onChange"
-    :loading="carregando"
-    :disabled="carregando"
     no-data-text="Os dados não estão disponíveis"
   ></v-select>
 </template>
@@ -24,10 +20,7 @@ import { Prop, Emit, Watch } from "vue-property-decorator";
 
 @Component
 export default class AtomoSelecao extends Vue {
-  private itemInterno: any = null;
-
-  @Prop()
-  itemSelecionado?: number;
+  private itemInterno: number | null = null;
 
   @Watch("itemInterno")
   alterarItem(): void {
@@ -45,7 +38,10 @@ export default class AtomoSelecao extends Vue {
   }
 
   @Prop()
-  itens!: any;
+  itemSelecionado!: number | null;
+
+  @Prop()
+  itens!: any[];
 
   @Prop()
   textoItem!: string;
@@ -55,12 +51,6 @@ export default class AtomoSelecao extends Vue {
 
   @Prop({ type: String, default: "" })
   placeholder?: string;
-
-  @Prop({ type: String, default: "" })
-  classes?: string;
-
-  @Prop({ type: String, default: "#fff" })
-  corDeFundo?: string;
 }
 </script>
 

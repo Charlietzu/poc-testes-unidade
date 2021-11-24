@@ -1,6 +1,6 @@
 import { Action, Module, Mutation, VuexModule } from "vuex-module-decorators";
 
-interface Alimento {
+export interface Alimento {
   nomeAlimento: string;
   codigoAlimento: number;
 }
