@@ -8,7 +8,7 @@ export interface Alimento {
 @Module({ name: "Alimentos" })
 export default class AlimentosModule extends VuexModule {
   private _alimentos: Alimento[] = [
-    {
+/*     {
       nomeAlimento: "Alface",
       codigoAlimento: 0,
     },
@@ -19,7 +19,7 @@ export default class AlimentosModule extends VuexModule {
     {
       nomeAlimento: "Batata",
       codigoAlimento: 2,
-    },
+    }, */
   ];
 
   private _alimentoSelecionado: number | null = null;
@@ -45,5 +45,10 @@ export default class AlimentosModule extends VuexModule {
   @Action
   atualizarAlimentoSelecionado(codigoAlimento: number): void {
     this.context.commit("setAlimentoSelecionado", codigoAlimento);
+  }
+
+  @Action
+  obterAlimentos(alimentos: Alimento[]): void {
+    this.context.commit("setAlimentos", alimentos);
   }
 }
