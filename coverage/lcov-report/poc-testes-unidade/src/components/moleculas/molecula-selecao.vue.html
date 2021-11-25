@@ -22,9 +22,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -36,16 +36,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -104,27 +104,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -140,27 +140,27 @@
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-<span class="cstat-no" title="statement not covered" >import Component from "vue-class-component";</span>
-<span class="cstat-no" title="statement not covered" >import Vue from "vue";</span>
-<span class="cstat-no" title="statement not covered" >import { AtomoSelecao } from "@/components/atomos";</span>
+import Component from "vue-class-component";
+import Vue from "vue";
+import { AtomoSelecao } from "@/components/atomos";
 import { Alimento } from "@/store/AlimentosModule";
-<span class="cstat-no" title="statement not covered" >import { moduloAlimentos } from "@/store";</span>
+import { moduloAlimentos } from "@/store";
 @Component({
   components: {
     AtomoSelecao,
   },
 })
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >export default class MoleculaSelecao extends Vue {</span></span>
-<span class="fstat-no" title="function not covered" >  get alimentos(): Alimento[] {</span>
-<span class="cstat-no" title="statement not covered" >    return moduloAlimentos.alimentos;</span>
+export default class MoleculaSelecao extends Vue {
+  get alimentos(): Alimento[] {
+    return moduloAlimentos.alimentos;
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  get alimentoSelecionado(): number | null {</span>
-<span class="cstat-no" title="statement not covered" >    return moduloAlimentos.alimentoSelecionado;</span>
+  get alimentoSelecionado(): number | null {
+    return moduloAlimentos.alimentoSelecionado;
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  alteracaoSelecaoAlimento(codigoAlimentoSelecionado: number): void {</span>
-<span class="cstat-no" title="statement not covered" >    moduloAlimentos.atualizarAlimentoSelecionado(codigoAlimentoSelecionado);</span>
+  alteracaoSelecaoAlimento(codigoAlimentoSelecionado: number): void {
+    moduloAlimentos.atualizarAlimentoSelecionado(codigoAlimentoSelecionado);
   }
 }
 &lt;/script&gt;
@@ -171,7 +171,7 @@ import { Alimento } from "@/store/AlimentosModule";
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Nov 25 2021 08:10:23 GMT-0300 (Brasilia Standard Time)
+                at Thu Nov 25 2021 08:14:18 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="..\..\..\..\prettify.js"></script>

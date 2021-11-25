@@ -22,9 +22,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -36,16 +36,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -129,43 +129,43 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -186,43 +186,43 @@
 &lt;/template&gt;
 &nbsp;
 &lt;script lang="ts"&gt;
-<span class="cstat-no" title="statement not covered" >import Vue from "vue";</span>
-<span class="cstat-no" title="statement not covered" >import Component from "vue-class-component";</span>
-<span class="cstat-no" title="statement not covered" >import { Prop, Emit, Watch } from "vue-property-decorator";</span>
+import Vue from "vue";
+import Component from "vue-class-component";
+import { Prop, Emit, Watch } from "vue-property-decorator";
 &nbsp;
 @Component
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >export default class AtomoSelecao extends Vue {</span></span>
-<span class="cstat-no" title="statement not covered" >  private itemInterno: number | null = null;</span>
+export default class AtomoSelecao extends Vue {
+  private itemInterno: number | null = null;
 &nbsp;
   @Watch("itemInterno")
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  alterarItem(): void {</span></span>
-<span class="cstat-no" title="statement not covered" >    this.itemInterno = this.itemSelecionado;</span>
+  alterarItem(): void {
+    this.itemInterno = this.itemSelecionado;
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  created(): void {</span>
-<span class="cstat-no" title="statement not covered" >    this.itemInterno = this.itemSelecionado;</span>
+  created(): void {
+    this.itemInterno = this.itemSelecionado;
   }
 &nbsp;
   @Watch("itemInterno")
   @Emit("alteracaoSelect")
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  onChange(valorSelecionado: number): number {</span></span>
-<span class="cstat-no" title="statement not covered" >    return valorSelecionado;</span>
+  onChange(valorSelecionado: number): number {
+    return valorSelecionado;
   }
 &nbsp;
   @Prop()
-<span class="cstat-no" title="statement not covered" >  itemSelecionado!: number | null;</span>
+  itemSelecionado!: number | null;
 &nbsp;
   @Prop()
-<span class="cstat-no" title="statement not covered" >  itens!: any[];</span>
+  itens!: any[];
 &nbsp;
   @Prop()
-<span class="cstat-no" title="statement not covered" >  textoItem!: string;</span>
+  textoItem!: string;
 &nbsp;
   @Prop()
-<span class="cstat-no" title="statement not covered" >  valorItem!: number;</span>
+  valorItem!: number;
 &nbsp;
   @Prop({ type: String, default: "" })
-<span class="cstat-no" title="statement not covered" >  placeholder?: string;</span>
+  placeholder?: string;
 }
 &lt;/script&gt;
 &nbsp;
@@ -234,7 +234,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Nov 25 2021 08:10:23 GMT-0300 (Brasilia Standard Time)
+                at Thu Nov 25 2021 08:14:18 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="..\..\..\..\prettify.js"></script>
